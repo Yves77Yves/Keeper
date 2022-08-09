@@ -1,8 +1,23 @@
-import React from "react";
+import { StrictMode } from "react";
+import ReactDOM from "react-dom";
+
+import App from "./components/App";
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+  rootElement
+);
+
+
+/* import React from "react";
 import ReactDOM from "react-dom";
 import App from "./components/App";
 
 ReactDOM.render(<App />, document.getElementById("root"));
+*/
 
 //CHALLENGE:
 //1. Implement the add note functionality.
